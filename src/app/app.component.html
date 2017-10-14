@@ -1,6 +1,8 @@
-<mat-toolbar color="primary" class="mat-elevation-z4">
-    Concept Devops
-    <span style="flex: 1 1 auto"></span>
-    <mat-icon>all_inclusive</mat-icon>
-</mat-toolbar>
-<router-outlet></router-outlet>
+<div [class.unicorn-dark-theme]="darkTheme">
+    <mat-toolbar color="primary" class="mat-elevation-z4">
+        Concept Devops
+        <span style="flex: 1 1 auto"></span>
+        <button mat-icon-button (click)="toggleDarkTheme()"><mat-icon>invert_colors</mat-icon></button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+</div>
