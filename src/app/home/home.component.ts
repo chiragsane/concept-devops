@@ -34,7 +34,7 @@ export class HomeComponent {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(HomeDailogComponent, {
-      width: '250px',
+      width: '300px',
       data: { name: this.name, animal: this.animal }
     });
 

@@ -1,3 +1,13 @@
-.component {
-    height: calc(100% - 64px);
+#codApp {
+    height: 100%;
+    .component {
+        height: calc(100% - 64px);
+        background: #ECEFF1;
+    }
+    &.unicorn-dark-theme {
+        .component {
+            background: #263238;
+            color: white;
+        }
+    }
 }
