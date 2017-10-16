@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   }
 
   onClick = () => {
-    this.appService.isAuthenticated = true;
+    this.appService.isAuthenticated.next(true);
     this.router.navigate(['/home']);
   }
 

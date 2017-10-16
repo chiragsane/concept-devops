@@ -8,7 +8,7 @@ export class AppGuard implements CanActivate {
   constructor(private appService: AppService, private router: Router) { }
 
   canActivate() {
-    if (this.appService.isAuthenticated) {
+    if (this.appService.isAuthenticated.value) {
       return true;
     } else {
       this.router.navigate(['/login']);
